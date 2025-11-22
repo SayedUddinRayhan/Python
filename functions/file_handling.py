@@ -24,3 +24,18 @@ my_list = ['\napple', '\nbanana', '\ncherry']
 
 with open("functions/text_file.txt", 'a') as file:
     file.writelines(my_list)
+
+
+
+import os 
+
+if os.path.exists("functions/text_file.txt"):
+    print("The file exists.")
+else:
+    print("The file does not exist.")
+
+# Path
+print("Absolute Path:", os.path.abspath("functions/text_file.txt"))
+print("Directory Name:",  os.path.dirname(os.path.abspath("functions/text_file.txt")))
+# Size
+print("File Size in bytes:", os.path.getsize("functions/text_file.txt"))
