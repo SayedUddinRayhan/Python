@@ -24,6 +24,10 @@ class Car:
         self.brand = brand
         self.model = model
 
+    # instance method
+    def display_info(self):
+        print(f"Car Brand: {self.brand}, Car Model: {self.model}")
+
 # my_car = Car()
 # my_car.brand = "Toyota"
 # my_car.model = "Corolla"
@@ -42,3 +46,5 @@ class Car:
 car_obj = Car()
 print("Car Brand:", car_obj.brand)
 print("Car Model:", car_obj.model)
+
+car_obj.display_info()
